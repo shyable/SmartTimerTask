@@ -17,9 +17,9 @@ export class DummyTimer implements Timer {
     if (this._pendingTask) throw new Error(`A task is already running!`);
 
     this._pendingTask = setTimeout(() => {
-      func();
       clearInterval(this._pendingTask);
       this._pendingTask = 0;
+      func();
     }, waitTime);
   }
 

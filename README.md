@@ -21,6 +21,13 @@ myTimer.runDelayed(() => console.log('Hello world!'), 1000);
 myTimer.runDelayed(() => console.log('Nice one!'), 2000);
 ```
 
+## Avoid using
+- setTimeout
+- setInterval
+- Other ways of scheduling
+
+Only use the built-in DummyTimer
+
 ## Running this project
 You can simply run the following:
 > npm start
